@@ -80,12 +80,13 @@ jobs:
         ../$DIY_SH
         make defconfig
 
-    - name: SSH connection to Actions
-      uses: P3TERX/debugger-action@master
-      if: env.SSH_ACTIONS == 'true'
+    #- name: SSH connection to Actions
+     # uses: P3TERX/debugger-action@master
+      #if: env.SSH_ACTIONS == 'true'
       
     - name: save config
       run: |  
+         cd openwrt
          ./scripts/diffconfig.sh > saved.config 
               
     - name: Download package
