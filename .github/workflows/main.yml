@@ -83,7 +83,11 @@ jobs:
     - name: SSH connection to Actions
       uses: P3TERX/debugger-action@master
       if: env.SSH_ACTIONS == 'true'
-
+      
+    - name: save config
+      run: |  
+         ./scripts/diffconfig.sh > saved.config 
+              
     - name: Download package
       id: package
       run: |
@@ -111,6 +115,7 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
+        mv openwrt/saved.config openwrt/bin/targets/*/*/saved.config
         cd openwrt/bin/targets/*/*
         rm -rf packages
         echo "::set-env name=FIRMWARE::$(pwd)"
