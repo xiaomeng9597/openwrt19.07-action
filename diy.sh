@@ -15,3 +15,4 @@ git clone https://github.com/yangsongli/luci-theme-atmaterial.git package/luci-t
 git clone https://github.com/pymumu/luci-app-smartdns.git  package/luci-app-smartdns
 git clone https://github.com/littletao08/luci-app-eqos.git package/luci-app-eqos
 git clone https://github.com/hong0980/luci-app-passwall.git package/luci-app-passwall
+git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
