@@ -23,8 +23,8 @@ on:
     types: [started]
 
 env:
-  REPO_URL: https://github.com/lunatickochiya/lunatic-lede
-  REPO_BRANCH: lede-17.01
+  REPO_URL: https://github.com/lunatickochiya/lean-lede-dropped
+  REPO_BRANCH: master
   CONFIG_FILE: CSAC.config
   DIY_SH: diy.sh
   FREE_UP_DISK: false
