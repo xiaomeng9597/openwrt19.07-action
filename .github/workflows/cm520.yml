@@ -84,7 +84,7 @@ jobs:
       uses: P3TERX/debugger-action@master
       if: env.SSH_ACTIONS == 'true'
 
-        - name: save config
+    - name: save config
       run: |  
          cd openwrt
          ./scripts/diffconfig.sh > saved.config 
