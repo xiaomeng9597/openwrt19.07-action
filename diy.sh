@@ -14,3 +14,4 @@ git clone https://github.com/jefferymvp/luci-app-koolproxyR package/luci-app-koo
 git clone https://github.com/yangsongli/luci-theme-atmaterial.git package/luci-theme-atmaterial
 git clone https://github.com/pymumu/luci-app-smartdns.git  package/luci-app-smartdns
 git clone https://github.com/littletao08/luci-app-eqos.git package/luci-app-eqos
+git clone https://github.com/hong0980/luci-app-passwall.git package/luci-app-passwall
