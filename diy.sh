@@ -16,4 +16,4 @@ sed -i 's/192.168.1.1/192.168.0.1/g' package/base-files/files/bin/config_generat
 git clone https://github.com/littletao08/luci-app-eqos.git package/luci-app-eqos
 #git clone https://github.com/hong0980/luci-app-passwall.git package/luci-app-passwall
 #git clone https://github.com/pexcn/openwrt-chinadns-ng.git package/chinadns-ng
-$git clone https://github.com/kenzok8/openwrt-packages.git package/ken
+#git clone https://github.com/kenzok8/openwrt-packages.git package/ken
