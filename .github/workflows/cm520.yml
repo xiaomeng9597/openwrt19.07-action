@@ -9,15 +9,17 @@
 name: cm520 OpenWrt
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
-#  schedule:
-#    - cron: 0 8 * * 5
+  release:
+    types: [published]
+  push:
+    branches:
+      - master
+    paths:
+      - '.config'
+  #schedule:
+  #    - cron: 0 22 * * *
+  watch:
+    types: [started]
 
 env:
   # REPO_URL: https://github.com/coolsnowwolf/lede
@@ -80,7 +82,7 @@ jobs:
         make defconfig
 
     - name: SSH connection to Actions
-      uses: P3TERX/ssh2actions@v1.0.0
+      uses: P3TERX/debugger-action@master
       if: env.SSH_ACTIONS == 'true'
 
     - name: save config
